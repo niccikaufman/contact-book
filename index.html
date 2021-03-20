@@ -13,28 +13,36 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="card">
             <div class="card-body">
               <button type="button" id="formButton">Add New Contact</button>
               <form id="form1">
-                <b>First Name:</b> <input type="text" name="firstName">
+                <b>First Name:</b><input type="text" id="firstName">
                 <br>
-                <b>Last Name: </b><input type="text" name="lastName">
+                <b>Last Name: </b><input type="text" id="lastName">
                 <br>
-                <b>Phone Number: </b><input type="text" name="phoneNumber">
+                <b>Phone Number: </b><input type="text" id="phoneNumber">
                 <br>
-                <b>Email Address: </b><input type="text" name="emailAddress">
+                <b>Email Address: </b><input type="text" id="emailAddress">
                 <br>
-                <b>Home Address: </b><input type="text" name="homeAddress">
-                 <button type="button" id="submit">Submit</button>
+                <b>Home Address: </b><input type="text" id="homeAddress">
+                <br>
+                <button type="submit" id="entry-save">Save</button>
               </form>
+              <div id="contact-entry">
+                <h3>New Contact</h3>
+                  <span class="firstName"></span>
+                  <br>
+                  <span class="lastName"></span>
+                  <br>
+                  <span class="phone"></span>
+                  <br>
+                  <span class="email"></span>
+                  <br>
+                  <span class="home"></span>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-8">
-          <div class="card" id="contact-entry">
-            <h1>contact entry</h1>
           </div>
         </div>
       </div>
