@@ -17,7 +17,17 @@ $(document).ready(function(){
     $(".email").text(emailInput);
     $(".home").text(homeInput);
 
-  $("#contact-entry").show();
-  $("#add-confirm").show();
+    $("#contact-entry").show();
+    $("#save-inquiry").show();
+  });
+
+  $("#clear-entry").click(function(){
+    $("#form1")[0].reset();
+    $("#form1").toggle();
+    $("#contact-entry").toggle();
+  });
+
+  $("#confirm-save").click(function(){
+    
   });
 });
