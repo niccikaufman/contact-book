@@ -5,11 +5,11 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Contact Book</title>
+    <title>Address Book</title>
   </head>
   <body>
     <div class="jumbotron">
-      <h1>Contact Book</h1>
+      <h1>Address Book</h1>
     </div>
     <div class="container">
       <div class="row">
@@ -35,7 +35,7 @@
         </div>
         <div class="col-md-4">
           <div class="card" id="contact-entry">
-            <h3>New Contact</h3>
+            <div class="card-title">New Contact</div>
               <ul>
                 <li class="firstName"> </li>
                 <li class="lastName"> </li>
@@ -43,6 +43,17 @@
                 <li class="email"> </li>
                 <li class="home"> </li>
               </ul>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card" id="add-confirm">
+            <div class="card-body">
+              <div class="card-title">Add to book?
+                <select class="form-control" id="confirm-add">
+                  <option>Yes</option>
+                  <option>No</option>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -32,4 +32,15 @@ button:hover {
 
 #contact-entry {
   display: none;
+  text-align: justify;
+}
+#add-confirm {
+  display: none;
+}
+#add-confirm:hover {
+  background-color: #6b5b95;
+}
+
+li {
+  list-style-type: none;
 }

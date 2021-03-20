@@ -18,5 +18,6 @@ $(document).ready(function(){
     $(".home").text(homeInput);
 
   $("#contact-entry").show();
+  $("#add-confirm").show();
   });
 });
