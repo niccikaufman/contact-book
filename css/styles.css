@@ -29,3 +29,7 @@ button:hover {
   text-align: right;
   color: white;
 }
+
+#contact-entry {
+  display: none;
+}

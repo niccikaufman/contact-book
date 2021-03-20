@@ -2,9 +2,9 @@ $(document).ready(function(){
   $("#formButton").click(function(){
     $("#form1").toggle();
   });
-  $("#entry-save").submit(function(event){
+
+  $("#entry-save").click(function(){
     event.preventDefault();
-    
     const firstNameInput = $("input#firstName").val();
     const lastNameInput = $("input#lastName").val();
     const phoneInput = $("input#phoneNumber").val();
@@ -17,5 +17,6 @@ $(document).ready(function(){
     $(".email").text(emailInput);
     $(".home").text(homeInput);
 
+  $("#contact-entry").show();
   });
 });
