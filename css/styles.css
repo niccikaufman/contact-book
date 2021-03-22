@@ -17,30 +17,37 @@ body {
 }
 
 .card {
-  background-color: #a2b9bc;
+  background-color: #a8e1e8;
+  color: black;
+  text-align: left;
 }
 
-button:hover {
+.btn-dark {
   background-color: #6b5b95;
+}
+
+.btn-dark:hover {
+  background-color: #a58ce4;
+  cursor: pointer;
 }
 
 #form1 {
   display: none;
   text-align: right;
   color: white;
+  background-color: #a2b9bc;
+  padding: 10px;
 }
 
-#contact-entry {
+#new-saved-contact, #confirm-entry {
   display: none;
-  text-align: justify;
+  color: #6b5b95;
+  padding: 3px;
+  color: black;
 }
-#add-confirm {
-  display: none;
-}
-#add-confirm:hover {
-  background-color: #6b5b95;
-}
+
 
 li {
   list-style-type: none;
+  color: black;
 }

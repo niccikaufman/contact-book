@@ -1,33 +1,34 @@
 $(document).ready(function(){
-  $("#formButton").click(function(){
+  $("#createNew").click(function(){
     $("#form1").toggle();
   });
 
-  $("#entry-save").click(function(){
+  $("#next").click(function(){
     event.preventDefault();
-    const firstNameInput = $("input#firstName").val();
-    const lastNameInput = $("input#lastName").val();
-    const phoneInput = $("input#phoneNumber").val();
-    const emailInput = $("input#emailAddress").val();
-    const homeInput = $("input#homeAddress").val();
-
-    $(".firstName").text(firstNameInput);
-    $(".lastName").text(lastNameInput);
-    $(".phone").text(phoneInput);
-    $(".email").text(emailInput);
-    $(".home").text(homeInput);
-
-    $("#contact-entry").show();
-    $("#save-inquiry").show();
+    $("#confirm-entry").show();
   });
 
-  $("#clear-entry").click(function(){
-    $("#form1")[0].reset();
-    $("#form1").toggle();
-    $("#contact-entry").toggle();
+  $("#reset").click(function() {
+    $("#new-saved-contact").toggle();
+    $("#confirm-entry").toggle();
   });
 
   $("#confirm-save").click(function(){
-    
+    event.preventDefault();
+    const firstNameInput = $("input#firstName").val();
+    const lastNameInput = $("input#lastName").val();
+    const addressInput = $("input#address").val();
+    const address2Input = $("input#address2").val();
+    const phoneInput = $("input#phone").val();
+    const emailInput = $("input#email").val();
+
+    $(".firstName").text(firstNameInput);
+    $(".lastName").text(lastNameInput);
+    $(".address").text(addressInput);
+    $(".address2").text(address2Input);
+    $(".phone").text(phoneInput);
+    $(".email").text(emailInput);
+
+    $("#new-saved-contact").show();
   });
 });
