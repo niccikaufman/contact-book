@@ -22,7 +22,6 @@ $(document).ready(function(){
 
   $("#confirm-save").click(function(event){
     event.preventDefault();
-    
   });
 
   $("#reset").click(function(event) {
