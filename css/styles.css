@@ -13,7 +13,8 @@ body {
   opacity: 75%;
 }
 
-#new-contact {
+#new-contact,
+#show-contact {
   display: flex-inline;
   text-align: left;
   color: black;
@@ -28,4 +29,12 @@ body {
 li {
   list-style-type: none;
   color: black;
+  background-color: antiquewhite;
+  width: 50%;
+  text-align: center;
+}
+
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
