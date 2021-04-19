@@ -14,6 +14,21 @@ AddressBook.prototype.assignId = function() {
   return this.currentId;
 };
 
+AddressBook.prototype.findContact = function(id) {
+  if(this.contacts[id] != undefined) {
+    return this.contacts[id];
+  }
+  return false;
+};
+
+AddressBook.prototype.deleteContact = function(id) {
+  if(this.contacts[id] === undefined) {
+    return false;
+  }
+  delete this.contacts[id];
+  return true;
+};
+
 //back end for Contacts
 function Contact(firstName,lastName,phoneNumber,emailAddress) {
   this.firstName = firstName;
