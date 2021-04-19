@@ -63,7 +63,7 @@ function showContact(contactId) {
   $(".email-address").html(contact.emailAddress);
   let buttons = $("#buttons");
   buttons.empty();
-  buttons.append("<button class='deleteButton' id=" + contact.id + ">Delete</button>");
+  buttons.append("<button class='deleteButton btn btn-dark btn-block' id=" + contact.id + ">Delete</button>");
 }
 
 function attachContactListeners() {
