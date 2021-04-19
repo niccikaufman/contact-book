@@ -10,30 +10,27 @@
       <h1>Address Book</h1>
     </div>
     <div class="container">       
-      <button type="button" id="createNew" class="btn btn-primary btn-dark btn-lg btn-block">Add New Contact</button>
-      <form id="form1">
-        <div class="form-row">
-          <div class="form-group col-md-6">
-              <label for="firstName">First Name</label>                    
-              <input type="text" class="form-control" id="firstName">
-              <label for="firstName">Last Name</label>                    
-              <input type="text" class="form-control" id="lastName">
-          </div>
-          <div class="col-md-6">
-            <label for="email">Email Address</label>                    
-            <input type="text" class="form-control" id="email">
-            <label for="phone">Phone Number</label>                    
-            <input type="text" class="form-control" id="phone">
-          </div>
-        </div>
-        <button type="submit" id="next" class="btn btn-dark btn-sm">Next</button>
-        <div id="confirm-entry">
-          <p id="show-new-contact"></p>
-          <p>Everything Look Correct?</p>
-            <button type="submit" id="confirm-save" class="btn btn-dark btn-sm">Create Contact</button>
-            <button type="reset" id="reset" class="btn btn-dark btn-sm">Start Over</button>
-        </div>
+      <button type="button" id="create-new-contact" class="btn btn-primary btn-dark btn-lg btn-block">Add New Contact</button>
+      <form id="new-contact">
+        <label for="new-first-name">First Name</label>                    
+        <input type="text" class="form-control" id="new-first-name">
+        <label for="new-last-name">Last Name</label>                    
+        <input type="text" class="form-control" id="new-last-name">
+        <label for="new-email">Email Address</label>                    
+        <input type="text" class="form-control" id="new-email">
+        <label for="new-phone">Phone Number</label>                    
+        <input type="text" class="form-control" id="new-phone">
+        <button type="submit" class="btn btn-dark btn-sm">Add Contact</button>
       </form>
+      <h2>Contacts:</h2>
+      <ul id="contacts">
+      </ul>
+      <div id="show-contact">
+        <p>First Name: <span class="first-name"></span></p>
+        <p>Last Name: <span class="last-name"></span></p>
+        <p>Phone Number: <span class="phone-number"></span></p>
+        <p>Email Address: <span class="email-address"></span></p>
+      </div>
     </div>
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/scripts.js"></script>
