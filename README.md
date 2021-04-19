@@ -11,7 +11,7 @@
 
 ## Description
 
-_A simple contact book which allows the user to pull up  each entry after submitting._
+_A simple contact book which allows the user to pull up each entry after submitting._
 
 ## Setup/Installation Requirements
 
@@ -21,7 +21,6 @@ _A simple contact book which allows the user to pull up  each entry after submit
 
 
 ## Known Bugs
-* _No ability to save more than one contact_
 
 ## License
 
