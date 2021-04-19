@@ -42,25 +42,17 @@ Contact.prototype.fullName = function() {
 };
 
 //front end
+let addressBook = new AddressBook();
+
 $(document).ready(function(){
-  $("#createNew").click(function(){
-    $("#form1").toggle();
-  });
-
-  $("#next").click(function(event){
+  $("form#new-contact").submit(function(event){
     event.preventDefault();
-    $("#confirm-entry").show();
-    let newContact = new Contact($("#firstName").val(),$("#lastName").val(),$("#phone").val(),$("#email").val());
-    console.log(newContact);
-  });
-
-  $("#confirm-save").click(function(event){
-    event.preventDefault();
-  });
-
-  $("#reset").click(function(event) {
-    event.preventDefault();
-    $("#new-saved-contact").toggle();
-    $("#confirm-entry").toggle();
+    const inputtedFirstName = $("input#new-first-name").val();
+    const inputtedLastName = $("input#new-last-name").val();
+    const inputtedPhoneNumber = $("input#new-phone-number").val();
+    const inputtedEmailAddress = $("input#new-email-address").val();
+    let newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedPhoneNumber, inputtedEmailAddress);
+    addressBook.addContact(newContact);
+    console.log(addressBook.contacts);
   });
 });

@@ -12,40 +12,16 @@ body {
   font-size: 30pt;
 }
 
-.card-title {
-  text-align: center;
-}
-
-.card {
-  background-color: #a8e1e8;
-  color: black;
-  text-align: left;
-}
-
-.btn-dark {
-  background-color: #6b5b95;
-}
-
-.btn-dark:hover {
-  background-color: #a58ce4;
-  cursor: pointer;
-}
-
-#form1 {
-  display: none;
+#new-contact {
   text-align: right;
   color: white;
   background-color: #a2b9bc;
   padding: 10px;
 }
 
-#new-saved-contact, #confirm-entry {
+#show-contact {
   display: none;
-  color: #6b5b95;
-  padding: 3px;
-  color: black;
 }
-
 
 li {
   list-style-type: none;
