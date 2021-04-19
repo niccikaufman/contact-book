@@ -56,7 +56,7 @@ function displayContactDetails(addressBookToDisplay) {
 
 function showContact(contactId) {
   const contact = addressBook.findContact(contactId);
-  $("#show-contact").show();
+  $("#show-contact").toggle();
   $(".first-name").html(contact.firstName);
   $(".last-name").html(contact.lastName);
   $(".phone-number").html(contact.phoneNumber);
@@ -85,6 +85,10 @@ $(document).ready(function(){
     const inputtedLastName = $("input#new-last-name").val();
     const inputtedPhoneNumber = $("input#new-phone").val();
     const inputtedEmailAddress = $("input#new-email").val();
+
+    //clear input form after submit
+    $("input").val("");
+
     let newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedPhoneNumber, inputtedEmailAddress);
     addressBook.addContact(newContact);
     displayContactDetails(addressBook);
