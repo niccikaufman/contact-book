@@ -49,10 +49,11 @@ $(document).ready(function(){
     event.preventDefault();
     const inputtedFirstName = $("input#new-first-name").val();
     const inputtedLastName = $("input#new-last-name").val();
-    const inputtedPhoneNumber = $("input#new-phone-number").val();
-    const inputtedEmailAddress = $("input#new-email-address").val();
+    const inputtedPhoneNumber = $("input#new-phone").val();
+    const inputtedEmailAddress = $("input#new-email").val();
     let newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedPhoneNumber, inputtedEmailAddress);
     addressBook.addContact(newContact);
     console.log(addressBook.contacts);
+    $("#show-contact").toggle();
   });
 });
